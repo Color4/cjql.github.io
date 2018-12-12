@@ -18,19 +18,19 @@
 
 
 
-<meta name="description" content="书目NLTK基础教程——用NLTK和Python库构建机器学习应用 [[packtpub]] 扩展阅读NLP入门（前几章）《Speech and Language Processing》，由Daniel Jurafsky与James H. Martin合著。《Statistical Natural Language Processing》，由Christopher D. Manning与Hinri">
-<meta name="keywords" content="fix,ML,文本分析,NLP">
+<meta name="description" content="读书笔记：NLTK基础教程——用NLTK和Python库构建机器学习应用。">
+<meta name="keywords" content="fix,ML,文本分析,NLP,packtpub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习笔记：NLTK">
 <meta property="og:url" content="https://cjql.github.io/2018年12月8日/index.html">
 <meta property="og:site_name" content="CJ">
-<meta property="og:description" content="书目NLTK基础教程——用NLTK和Python库构建机器学习应用 [[packtpub]] 扩展阅读NLP入门（前几章）《Speech and Language Processing》，由Daniel Jurafsky与James H. Martin合著。《Statistical Natural Language Processing》，由Christopher D. Manning与Hinri">
+<meta property="og:description" content="读书笔记：NLTK基础教程——用NLTK和Python库构建机器学习应用。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/6908911-6c01a13213e00401.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-12-09T23:30:37.373Z">
+<meta property="og:updated_time" content="2018-12-12T04:55:40.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记：NLTK">
-<meta name="twitter:description" content="书目NLTK基础教程——用NLTK和Python库构建机器学习应用 [[packtpub]] 扩展阅读NLP入门（前几章）《Speech and Language Processing》，由Daniel Jurafsky与James H. Martin合著。《Statistical Natural Language Processing》，由Christopher D. Manning与Hinri">
+<meta name="twitter:description" content="读书笔记：NLTK基础教程——用NLTK和Python库构建机器学习应用。">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/6908911-6c01a13213e00401.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -53,7 +53,7 @@
 
 
     <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/yellow/pace-theme-minimal.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="/css/style.css">
@@ -167,14 +167,30 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/archives">时间轴</a></li>
+                            <li><a href="/archives/">时间轴</a></li>
                         
                             <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/hello">关于我</a></li>
                         
                         </ul>
                     </nav>
                     <nav class="header-nav">
                         <ul class="social">
+                            
+                                <a class="fa GitHub" href="//github.com/cjql" title="GitHub"></a>
+                            
+                                <a class="fa 豆瓣" href="/douban" title="豆瓣"></a>
+                            
+                                <a class="fa Twitter" href="//twitter.com/" title="Twitter"></a>
+                            
+                                <a class="fa StackOverflow" href="https://stackoverflow.com/" title="StackOverflow"></a>
+                            
+                                <a class="fa Flickr" href="#" title="Flickr"></a>
+                            
+                                <a class="fa 博客园" href="/cnblogs" title="博客园"></a>
+                            
+                                <a class="fa CSDN" href="/" title="CSDN"></a>
                             
                         </ul>
                     </nav>
@@ -183,7 +199,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GUI/">GUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLTK/">NLTK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/achieve/">achieve</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/">book</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/code/">code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/error/">error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fix/">fix</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/menu/">menu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mind/">mind</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/one/">one</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python基础/">python基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/todo/">todo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wiki/">wiki</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/思考/">思考</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/文本分析/">文本分析</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/爬虫/">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/空闲扩展/">空闲扩展</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程基础/">编程基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转载/">转载</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GUI/">GUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLTK/">NLTK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/achieve/">achieve</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/">book</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/code/">code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fix/">fix</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/menu/">menu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mind/">mind</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/one/">one</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/packtpub/">packtpub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python基础/">python基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/todo/">todo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wiki/">wiki</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/思考/">思考</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/文本分析/">文本分析</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/爬虫/">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/空闲扩展/">空闲扩展</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程基础/">编程基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转载/">转载</a></li></ul>
                     </div>
                 </section>
                 
@@ -214,9 +230,11 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/archives">时间轴</a></li>
+                    <li><a href="/archives/">时间轴</a></li>
                 
                     <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/hello">关于我</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -224,54 +242,68 @@
             <nav class="header-nav">
                         <ul class="social">
                             
+                                <a class="fa GitHub" target="_blank" href="//github.com/cjql" title="GitHub"></a>
+                            
+                                <a class="fa 豆瓣" target="_blank" href="/douban" title="豆瓣"></a>
+                            
+                                <a class="fa Twitter" target="_blank" href="//twitter.com/" title="Twitter"></a>
+                            
+                                <a class="fa StackOverflow" target="_blank" href="https://stackoverflow.com/" title="StackOverflow"></a>
+                            
+                                <a class="fa Flickr" target="_blank" href="#" title="Flickr"></a>
+                            
+                                <a class="fa 博客园" target="_blank" href="/cnblogs" title="博客园"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="/" title="CSDN"></a>
+                            
                         </ul>
             </nav>
         </header>                
     </div>
 </nav>
       <div class="body-wrap"><article id="post-2018年12月8日" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018年12月8日/" class="article-date">
+    
+      <div class="article-meta">
+        <a href="/2018年12月8日/" class="article-date">
       <time datetime="2018-12-11T16:51:44.143Z" itemprop="datePublished">2018-12-12</time>
 </a>
 
 
-    </div>
-  
-  <div class="article-inner">
+      </div>
     
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
+    <div class="article-inner">
+      
+        <input type="hidden" class="isFancy">
+      
+      
+        <header class="article-header">
+          
   
     <h1 class="article-title" itemprop="name">
       学习笔记：NLTK
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
+        </header>
         
+        <div class="article-info article-info-post">
+          
 
-        
+          
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NLP/">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fix/">fix</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文本分析/">文本分析</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NLP/">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fix/">fix</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/packtpub/">packtpub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文本分析/">文本分析</a></li></ul>
     </div>
 
-        <div class="clearfix"></div>
-      </div>
+          <div class="clearfix"></div>
+        </div>
+        
       
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-          
-        <h1 id="书目"><a href="#书目" class="headerlink" title="书目"></a>书目</h1><p>NLTK基础教程——用NLTK和Python库构建机器学习应用 [[packtpub]]</p>
-<h2 id="扩展阅读"><a href="#扩展阅读" class="headerlink" title="扩展阅读"></a>扩展阅读</h2><p>NLP入门（前几章）<br>《Speech and Language Processing》，由Daniel Jurafsky与James H. Martin合著。<br>《Statistical Natural Language Processing》，由Christopher D. Manning与Hinrich Schütze合著<br>维基百科上与NLP相关的页面。<a href="https://en.wikipedia.org/wiki/NLP" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/NLP</a></p>
+      <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+          <p>读书笔记：NLTK基础教程——用NLTK和Python库构建机器学习应用。<br><a id="more"></a></p>
+<h1 id="书目"><a href="#书目" class="headerlink" title="书目"></a>书目</h1><h2 id="扩展阅读"><a href="#扩展阅读" class="headerlink" title="扩展阅读"></a>扩展阅读</h2><p>NLP入门（前几章）<br>《Speech and Language Processing》，由Daniel Jurafsky与James H. Martin合著。<br>《Statistical Natural Language Processing》，由Christopher D. Manning与Hinrich Schütze合著<br>维基百科上与NLP相关的页面。<a href="https://en.wikipedia.org/wiki/NLP" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/NLP</a></p>
 <h1 id="残留"><a href="#残留" class="headerlink" title="残留"></a>残留</h1><p>help()是不是只能用于str和list。<br>答：否。dir(dict)以及import后再help。</p>
 <h1 id="最"><a href="#最" class="headerlink" title="最"></a>最</h1><p>NLTK 库是当前自然语言处理（NLP）领域最为流行、使用最为广泛的库之一, 同时Python语言也已逐渐成为主流的编程语言之一。<br>关于这个问题，我们可以先来看看Gartner公司新一轮的趋势报告，你可以很清晰地看到，NLP技术赫然高居榜首。目前，NLP已被认为是业界最为稀缺的技能之一。<br>列表（list）是Python中最常用的数据结构之一。它们基本上相当于其他编程语言中的数组。<br>字典（dictionary）也是最常用到的数据结构之一。在其他编程语言中有时也被称为关联数组/存储。<br>字符串操作同时也是Python最主要的特性之一。</p>
 <ul>
@@ -297,17 +329,17 @@
 <p><blockquote><br>@高晓松　<br>作为自幼学棋，崇拜国手的业余棋手，看了Master50 : 0横扫中日韩顶尖高手的对局，难过极了。为所有的大国手伤心，路已经走完了。多少代大师上下求索，求道求术，全被破解。未来一个八岁少年只要一部手机就可以战胜九段，荣誉信仰灰飞烟灭。等有一天，机器做出了所有的音乐和诗歌，我们的路也会走完。<br>1月4日　16:21　来自　iPhone 7 Plus<br></blockquote><br>其实之所以会有这样恐惧，大部分是因为人们在讨论人工智能的时候容易将机器“人格化”，很多科幻作品就是这么干的，这看起来很合理，但问题是机器无论如何都不是人。对于机器来说，围棋说穿了不过是一种基于统计学概率的决策模型，属于数学领域的问题，它本来就是机器的强项。用围棋对于人类的难度来推导机器智能的进步，其实是很没有逻辑的事情。而且事实上，今天所流行的这些人工智能方法都是在20世纪70年代前后提出的理论，今天的辉煌主要是由于硬件的进步为实现提供了基础，但在智能上并没有多大的实质突破。要知道，人们对于鉴定人工智能的主要标准早有定论，那就是图灵测试</p>
 <h1 id="套话"><a href="#套话" class="headerlink" title="套话"></a>套话</h1><p>众所周知，语言是人们日常生活的核心部分，任何与语言问题相关的工作都会显得非常有意思。希望这本书能带你领略到NLP的风采，并引起学习NLP的兴趣。首先，我们需要来了解一下该领域中的一些令人惊叹的概念，并在工作中实际尝试一些具有挑战性的NLP应用。<br>身处信息时代，我们甚至不能想象生活中没有Google会是什么样子。<br>在这里，我们可以再列举一些令人惊叹的NLP应用实例。<br>构建上述这些应用都需要非常具体的技能，需要优秀的语言理解能力和能有效处理这些语言的工具。因此，这些不仅是各NLP最具优势领域的未来趋势，同时也是我们用NLP这种最独特技能所能创建的应用种类</p>
 
+        
+      </div>
       
     </div>
     
-  </div>
-  
-    
+      
     <div class="copyright">
         <p><span>本文标题:</span><a href="/2018年12月8日/">学习笔记：NLTK</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
         <p><span>发布时间:</span>2018-12-12, 00:51</p>
-        <p><span>最后更新:</span>2018-12-10, 07:30</p>
+        <p><span>最后更新:</span>2018-12-12, 12:55</p>
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
@@ -326,7 +358,7 @@
         </p>
     </div>
 
-    
+      
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
@@ -344,14 +376,14 @@
         
     </nav>
 
+    
+  </article>
   
-</article>
-
-
-
-
-
-
+  
+  
+  
+  
+  
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
@@ -363,8 +395,8 @@
         .left-col .switch-area {
             display: none;
         }
-        .toc-level-3 i,
-        .toc-level-3 ol {
+        .toc-level-6 i,
+        .toc-level-6 ol {
             display: none !important;
         }
     </style>
@@ -375,32 +407,14 @@
         yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
     </script>
 
-
-
-    
-    <div class="share">
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"学习笔记：NLTK　| CJ　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    </div>
-
-
-
-
-    
-
-
-
+  
+  
+  
+  
+      
+  
+  
+  
 
     <div class="scroll" id="post-nav-button">
         
@@ -418,15 +432,15 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/三思而后行/">三思而后行</a></li><li class="post-list-item"><a class="post-list-link" href="/程序员书单/">程序员书单</a></li><li class="post-list-item"><a class="post-list-link" href="/ireadweek/">ireadweek</a></li><li class="post-list-item"><a class="post-list-link" href="/精通python爬虫框架scrapy/">精通Python爬虫框架Scrapy</a></li><li class="post-list-item"><a class="post-list-link" href="/精通Python网络爬虫：核心技术、框架与项目实战/">精通Python网络爬虫：核心技术、框架与项目实战</a></li><li class="post-list-item"><a class="post-list-link" href="/Python网络爬虫实战/">Python网络爬虫实战</a></li><li class="post-list-item"><a class="post-list-link" href="/Python爬虫开发与项目实战/">Python爬虫开发与项目实战</a></li><li class="post-list-item"><a class="post-list-link" href="/从零开始学Python网络爬虫/">从零开始学Python网络爬虫</a></li><li class="post-list-item"><a class="post-list-link" href="/Python网络爬虫从入门到实践/">Python网络爬虫从入门到实践</a></li><li class="post-list-item"><a class="post-list-link" href="/文件读写权限/">文件读写权限</a></li><li class="post-list-item"><a class="post-list-link" href="/Python文件读写/">Python文件读写</a></li><li class="post-list-item"><a class="post-list-link" href="/Python字符串操作/">Python字符串操作</a></li><li class="post-list-item"><a class="post-list-link" href="/使用Tkinter模块来创建简单的GUI程序/">转载：使用Tkinter模块来创建简单的GUI程序</a></li><li class="post-list-item"><a class="post-list-link" href="/github/">github</a></li><li class="post-list-item"><a class="post-list-link" href="/2018年11月GitHub项目/">2018年11月GitHub项目</a></li><li class="post-list-item"><a class="post-list-link" href="/券商研报地址/">券商研报地址</a></li><li class="post-list-item"><a class="post-list-link" href="/2018年12月8日/">学习笔记：NLTK</a></li><li class="post-list-item"><a class="post-list-link" href="/packtpub/">packtpub</a></li><li class="post-list-item"><a class="post-list-link" href="/机器学习网址资源/">机器学习网址资源</a></li><li class="post-list-item"><a class="post-list-link" href="/代码样式/">代码样式</a></li><li class="post-list-item"><a class="post-list-link" href="/清洗+词频统计+排序+nltk+可视化/">清洗+词频统计+排序+nltk+可视化</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构/">数据结构概述——感受编程之美</a></li><li class="post-list-item"><a class="post-list-link" href="/算法/">算法</a></li><li class="post-list-item"><a class="post-list-link" href="/交易书单/">交易书单</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构概览/">数据结构概览</a></li><li class="post-list-item"><a class="post-list-link" href="/线性表/">线性表</a></li><li class="post-list-item"><a class="post-list-link" href="/errorhexo/">errorhexo</a></li><li class="post-list-item"><a class="post-list-link" href="/todo/">todo</a></li><li class="post-list-item"><a class="post-list-link" href="/doing/">doing</a></li><li class="post-list-item"><a class="post-list-link" href="/tag/">tag</a></li><li class="post-list-item"><a class="post-list-link" href="/tool/">tool</a></li><li class="post-list-item"><a class="post-list-link" href="/achieve/">achieve</a></li><li class="post-list-item"><a class="post-list-link" href="/品格/">品格</a></li><li class="post-list-item"><a class="post-list-link" href="/品行/">品行</a></li><li class="post-list-item"><a class="post-list-link" href="/品味/">品味</a></li><li class="post-list-item"><a class="post-list-link" href="/技能/">技能</a></li><li class="post-list-item"><a class="post-list-link" href="/立言/">立言</a></li><li class="post-list-item"><a class="post-list-link" href="/学习法/">学习法</a></li><li class="post-list-item"><a class="post-list-link" href="/书评/">书评</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全/">代码大全</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全书籍介绍/">代码大全书籍介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/checklist/">checklist</a></li><li class="post-list-item"><a class="post-list-link" href="/构建/">构建</a></li><li class="post-list-item"><a class="post-list-link" href="/软件构建/">软件构建</a></li><li class="post-list-item"><a class="post-list-link" href="/生产率/">生产率</a></li><li class="post-list-item"><a class="post-list-link" href="/丰富多彩的计算机语言/">丰富多彩的计算机语言</a></li><li class="post-list-item"><a class="post-list-link" href="/隐喻/">隐喻</a></li><li class="post-list-item"><a class="post-list-link" href="/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/hello/">hello</a></li><li class="post-list-item"><a class="post-list-link" href="/三思而后行/">三思而后行</a></li><li class="post-list-item"><a class="post-list-link" href="/程序员书单/">程序员书单</a></li><li class="post-list-item"><a class="post-list-link" href="/ireadweek/">ireadweek</a></li><li class="post-list-item"><a class="post-list-link" href="/精通python爬虫框架scrapy/">精通Python爬虫框架Scrapy</a></li><li class="post-list-item"><a class="post-list-link" href="/精通Python网络爬虫：核心技术、框架与项目实战/">精通Python网络爬虫：核心技术、框架与项目实战</a></li><li class="post-list-item"><a class="post-list-link" href="/Python网络爬虫实战/">Python网络爬虫实战</a></li><li class="post-list-item"><a class="post-list-link" href="/Python爬虫开发与项目实战/">Python爬虫开发与项目实战</a></li><li class="post-list-item"><a class="post-list-link" href="/从零开始学Python网络爬虫/">从零开始学Python网络爬虫</a></li><li class="post-list-item"><a class="post-list-link" href="/Python网络爬虫从入门到实践/">Python网络爬虫从入门到实践</a></li><li class="post-list-item"><a class="post-list-link" href="/文件读写权限/">文件读写权限</a></li><li class="post-list-item"><a class="post-list-link" href="/Python文件读写/">Python文件读写</a></li><li class="post-list-item"><a class="post-list-link" href="/Python字符串操作/">Python字符串操作</a></li><li class="post-list-item"><a class="post-list-link" href="/使用Tkinter模块来创建简单的GUI程序/">转载：使用Tkinter模块来创建简单的GUI程序</a></li><li class="post-list-item"><a class="post-list-link" href="/github/">github</a></li><li class="post-list-item"><a class="post-list-link" href="/2018年11月GitHub项目/">2018年11月GitHub项目</a></li><li class="post-list-item"><a class="post-list-link" href="/券商研报地址/">券商研报地址</a></li><li class="post-list-item"><a class="post-list-link" href="/2018年12月8日/">学习笔记：NLTK</a></li><li class="post-list-item"><a class="post-list-link" href="/packtpub/">packtpub</a></li><li class="post-list-item"><a class="post-list-link" href="/机器学习网址资源/">机器学习网址资源</a></li><li class="post-list-item"><a class="post-list-link" href="/代码样式/">代码样式</a></li><li class="post-list-item"><a class="post-list-link" href="/清洗+词频统计+排序+nltk+可视化/">清洗+词频统计+排序+nltk+可视化</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构/">数据结构概述——感受编程之美</a></li><li class="post-list-item"><a class="post-list-link" href="/算法/">算法</a></li><li class="post-list-item"><a class="post-list-link" href="/交易书单/">交易书单</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构概览/">数据结构概览</a></li><li class="post-list-item"><a class="post-list-link" href="/线性表/">线性表</a></li><li class="post-list-item"><a class="post-list-link" href="/todo/">todo</a></li><li class="post-list-item"><a class="post-list-link" href="/doing/">doing</a></li><li class="post-list-item"><a class="post-list-link" href="/tag/">tag</a></li><li class="post-list-item"><a class="post-list-link" href="/tool/">tool</a></li><li class="post-list-item"><a class="post-list-link" href="/achieve/">achieve</a></li><li class="post-list-item"><a class="post-list-link" href="/品格/">品格</a></li><li class="post-list-item"><a class="post-list-link" href="/品行/">品行</a></li><li class="post-list-item"><a class="post-list-link" href="/品味/">品味</a></li><li class="post-list-item"><a class="post-list-link" href="/技能/">技能</a></li><li class="post-list-item"><a class="post-list-link" href="/立言/">立言</a></li><li class="post-list-item"><a class="post-list-link" href="/学习法/">学习法</a></li><li class="post-list-item"><a class="post-list-link" href="/书评/">书评</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全/">代码大全</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全书籍介绍/">代码大全书籍介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/checklist/">checklist</a></li><li class="post-list-item"><a class="post-list-link" href="/构建/">构建</a></li><li class="post-list-item"><a class="post-list-link" href="/软件构建/">软件构建</a></li><li class="post-list-item"><a class="post-list-link" href="/生产率/">生产率</a></li><li class="post-list-item"><a class="post-list-link" href="/丰富多彩的计算机语言/">丰富多彩的计算机语言</a></li><li class="post-list-item"><a class="post-list-link" href="/隐喻/">隐喻</a></li></ul>
 
 
-
-
-    <script>
-        
-    </script>
-</div>
+  
+  
+      <script>
+          
+      </script>
+  </div>
       <footer id="footer">
     <div class="outer">
         <div id="footer-info">
