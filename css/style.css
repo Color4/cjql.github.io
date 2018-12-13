@@ -1615,7 +1615,7 @@ ul > li::before,
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  background: #88acdb;
+  background: #ffc0cb;
   color: #fff;
   font-size: 0.9rem;
   line-height: 1em;
@@ -1627,7 +1627,7 @@ ul > li::before,
   opacity: 0.7;
 }
 .article-more-link a:hover {
-  background: #9c9;
+  background: #ee82ee;
   opacity: 1;
 }
 .article-more-link a.hidden {
