@@ -1468,7 +1468,7 @@ ul > li::before,
   text-align: center;
 }
 .article-entry h1:hover {
-  color: #88acdb;
+  color: #0f0;
 }
 .article-entry h1::before,
 .article-entry h1::after {
@@ -1482,7 +1482,7 @@ ul > li::before,
   font-size: 1rem;
 }
 .article-entry h2:hover {
-  color: #88acdb;
+  color: #0f0;
 }
 .article-entry h2::before,
 .article-entry h2::after {
@@ -2167,14 +2167,14 @@ aside.comment-bar:active {
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: rgba(51,51,51,0.85);
+  background: highlight-background;
   margin: auto;
   padding: 0.35em 1.5em;
   border-style: solid;
   border-color: #ddd;
   border-width: 1px;
   overflow: auto;
-  color: #ccc;
+  color: highlight-foreground;
   line-height: 1.3rem;
 }
 .article-entry .highlight .gutter pre {
@@ -2190,7 +2190,7 @@ aside.comment-bar:active {
   text-shadow: none;
   padding: 0;
   background: none;
-  color: #ccc;
+  color: highlight-foreground;
 }
 .article-entry .highlight {
   border-radius: 2px;
@@ -2215,7 +2215,7 @@ aside.comment-bar:active {
 }
 .article-entry .highlight figcaption {
   font-size: 0.85em;
-  color: #999;
+  color: highlight-comment;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -2248,7 +2248,7 @@ aside.comment-bar:active {
 pre .comment,
 pre .quote,
 pre .title {
-  color: #999;
+  color: highlight-comment;
 }
 pre .variable,
 pre .attribute,
@@ -2267,7 +2267,7 @@ pre .name,
 pre .selector-id,
 pre .selector-class,
 pre .deletion {
-  color: #f2777a;
+  color: highlight-red;
 }
 pre .number,
 pre .preprocessor,
@@ -2279,10 +2279,10 @@ pre .builtin-name,
 pre .type,
 pre .meta,
 pre .link {
-  color: #f99157;
+  color: highlight-orange;
 }
 pre .attribute {
-  color: #fc6;
+  color: highlight-yellow;
 }
 pre .class,
 pre .ruby .class .title,
@@ -2291,7 +2291,7 @@ pre .string,
 pre .symbol,
 pre .bullet,
 pre .addition {
-  color: #9c9;
+  color: highlight-green;
 }
 pre .string,
 pre .value,
@@ -2299,10 +2299,10 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #9c9;
+  color: highlight-green;
 }
 pre .css .hexcolor {
-  color: #6cc;
+  color: highlight-aqua;
 }
 pre .function,
 pre .python .decorator,
@@ -2314,17 +2314,65 @@ pre .javascript .title,
 pre .coffeescript .title,
 pre .title,
 pre .section {
-  color: #69c;
+  color: highlight-blue;
 }
 pre .keyword,
 pre .javascript .function,
 pre .selector-tag {
-  color: #c9c;
+  color: highlight-purple;
 }
 pre .emphasis {
   font-style: italic;
 }
 pre .strong {
+  font-weight: bold;
+}
+.highlight .comment,
+.highlight .quote {
+  color: #7d7a68;
+}
+.highlight .variable,
+.highlight .template-variable,
+.highlight .attribute,
+.highlight .tag,
+.highlight .name,
+.highlight .regexp,
+.highlight .link,
+.highlight .selector-id,
+.highlight .selector-class {
+  color: #d73737;
+}
+.highlight .number,
+.highlight .meta,
+.highlight .built_in,
+.highlight .builtin-name,
+.highlight .literal,
+.highlight .type,
+.highlight .params {
+  color: #b65611;
+}
+.highlight .string,
+.highlight .symbol,
+.highlight .bullet {
+  color: #60ac39;
+}
+.highlight .title,
+.highlight .section {
+  color: #6684e1;
+}
+.highlight .keyword,
+.highlight .selector-tag {
+  color: #b854d4;
+}
+.highlight {
+  background: rgba(254,251,236,0.8);
+  color: #6e6b5e;
+  padding: 0.5em;
+}
+.highlight .emphasis {
+  font-style: italic;
+}
+.highlight .strong {
   font-weight: bold;
 }
 #footer {
@@ -3144,6 +3192,6 @@ p.no-result {
   border-bottom: 2px solid #d3d3d3;
 }
 .article-entry code.match {
-  color: #ccc;
-  background: rgba(51,51,51,0.85);
+  color: highlight-foreground;
+  background: highlight-background;
 }

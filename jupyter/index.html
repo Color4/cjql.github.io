@@ -18,18 +18,18 @@
 
 
 
-<meta name="description" content="工欲善其事必先利其器">
-<meta name="keywords" content="web">
+<meta name="description" content="jupyter命令一览。">
+<meta name="keywords" content="python,后续学习,jupyter,学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="tool">
-<meta property="og:url" content="https://cjql.github.io/tool/index.html">
+<meta property="og:title" content="jupyter">
+<meta property="og:url" content="https://cjql.github.io/jupyter/index.html">
 <meta property="og:site_name" content="CJ">
-<meta property="og:description" content="工欲善其事必先利其器">
+<meta property="og:description" content="jupyter命令一览。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-12T05:14:21.184Z">
+<meta property="og:updated_time" content="2018-12-13T00:49:12.748Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tool">
-<meta name="twitter:description" content="工欲善其事必先利其器">
+<meta name="twitter:title" content="jupyter">
+<meta name="twitter:description" content="jupyter命令一览。">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -61,7 +61,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>tool | CJ</title>
+<title>jupyter | CJ</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -263,11 +263,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-tool" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-jupyter" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
-        <a href="/tool/" class="article-date">
-      <time datetime="2018-12-11T16:51:44.095Z" itemprop="datePublished">2018-12-12</time>
+        <a href="/jupyter/" class="article-date">
+      <time datetime="2018-12-12T23:23:00.504Z" itemprop="datePublished">2018-12-13</time>
 </a>
 
 
@@ -282,7 +282,7 @@
           
   
     <h1 class="article-title" itemprop="name">
-      tool
+      jupyter
     </h1>
   
 
@@ -293,7 +293,7 @@
 
           
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jupyter/">jupyter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/后续学习/">后续学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习笔记/">学习笔记</a></li></ul>
     </div>
 
           <div class="clearfix"></div>
@@ -304,9 +304,65 @@
         
         
             
-          <p>工欲善其事必先利其器<br><a id="more"></a></p>
-<h1 id="webs"><a href="#webs" class="headerlink" title="webs"></a>webs</h1><p><a href="http://www.newxue.com/chengyu/z/" target="_blank" rel="noopener">新学网</a> 成语按意思查询 中高考各种相关知识<br><a href="http://e.jd.com/" target="_blank" rel="noopener">京东读书在线阅读</a></p>
-<h1 id="开发相关"><a href="#开发相关" class="headerlink" title="开发相关"></a>开发相关</h1><p><a href="http://www.runoob.com/font-awesome/fontawesome-reference.html" target="_blank" rel="noopener">fontawesome</a>  </p>
+          <p>jupyter命令一览。<br><a id="more"></a></p>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><h2 id="官方网站"><a href="#官方网站" class="headerlink" title="官方网站"></a>官方网站</h2><p><a href="http://jupyter.org/install" target="_blank" rel="noopener">官方网站</a> </p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>pip install jupyter --user</code> 安装<br><code>jupyter notebook</code> 进入笔记本</p>
+<h2 id="修改默认路径和浏览器"><a href="#修改默认路径和浏览器" class="headerlink" title="修改默认路径和浏览器"></a>修改默认路径和浏览器</h2><p>Windows默认在chrome里面打开：<br>1.命令行：jupyter notebook –generate-config<br>2.打开文件：jupyter_notebook_config.py<br>3.在文件头部添加:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> webbrowser</span><br><span class="line">webbrowser.register(<span class="string">'chrome'</span>, <span class="keyword">None</span>, webbrowser.GenericBrowser(<span class="string">u'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'</span>))</span><br><span class="line">c.NotebookApp.browser = <span class="string">'chrome'</span></span><br></pre></td></tr></table></figure></p>
+<p>路径需要酌情调整。</p>
+<h1 id="在nbviewer中查看"><a href="#在nbviewer中查看" class="headerlink" title="在nbviewer中查看"></a>在nbviewer中查看</h1><p>github文件的网址中把<code>https://github.com</code> 替换为<code>https://nbviewer.jupyter.org/github</code> 。<br>注意斜线个数。<a href="https://nbviewer.jupyter.org/github/cjql/myjupyter/blob/master/MySQL.ipynb" target="_blank" rel="noopener">典型示例</a>：<code>https://nbviewer.jupyter.org/github/cjql/myjupyter/blob/master/MySQL.ipynb</code><br><a href="http://nbviewer.jupyter.org/faq" target="_blank" rel="noopener">官方网站</a></p>
+<h1 id="格式转换-html、md、pdf、letex"><a href="#格式转换-html、md、pdf、letex" class="headerlink" title="格式转换: html、md、pdf、letex"></a>格式转换: html、md、pdf、letex</h1><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://cloud.tencent.com/developer/article/1008571" target="_blank" rel="noopener">格式转换</a></p>
+<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><p><a href="https://ipython.org/ipython-doc/3/notebook/nbconvert.html" target="_blank" rel="noopener">官方文档</a><br><a href="https://cloud.tencent.com/developer/article/1008490" target="_blank" rel="noopener">腾讯云入门教程1</a> <a href="https://hub.packtpub.com/getting-started-jupyter-notebook-part-1/" target="_blank" rel="noopener">英文参考文献</a><br><a href="https://cloud.tencent.com/developer/article/1008493" target="_blank" rel="noopener">腾讯云入门教程2</a> <a href="https://hub.packtpub.com/getting-started-jupyter-notebook-part-2/" target="_blank" rel="noopener">英文参考文献</a></p>
+<h2 id="命令式"><a href="#命令式" class="headerlink" title="命令式"></a>命令式</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jupyter nbconvert –to html notebook.ipynb</td>
+<td>ipynb转为html格式</td>
+</tr>
+<tr>
+<td>jupyter nbconvert –to html –template full notebook.ipynb</td>
+<td>对生成的html格式进行配置，默认配置，提供完整的静态html格式，交互性更强。</td>
+</tr>
+<tr>
+<td>jupyter nbconvert –to html –template basic notebook.ipynb</td>
+<td>简化的html，用于嵌入网页、博客等，这不包括html标题。</td>
+</tr>
+<tr>
+<td>jupyter nbconvert –to md notebook.ipynb</td>
+<td>简单的Markdown格式输出，cell单元不受影响，代码cell缩进4个空格。</td>
+</tr>
+<tr>
+<td>jupyter nbconvert –to letex notebook.ipynb</td>
+<td>Letex导出格式，生成后缀名为NOTEBOOK_NAME.tex的文件。</td>
+</tr>
+<tr>
+<td>jupyter nbconvert –to letex -template article notebook.ipynb</td>
+<td>默认配置，Latex文章。</td>
+</tr>
+<tr>
+<td>jupyter nbconvert –to letex -template report notebook.ipynb</td>
+<td>Latex报告，提供目录和章节。</td>
+</tr>
+<tr>
+<td>jupyter nbconvert –to letex -template basic notebook.ipynb</td>
+<td>最基本的Latex输出，经常用来自定义配置。</td>
+</tr>
+<tr>
+<td>jupyter nbconvert –to pdf notebook.ipynb</td>
+<td>转换为pdf格式分模板配置与latex配置是一样的。需要提前安装xelatex。</td>
+</tr>
+<tr>
+<td>sudo apt-get install texlive-full</td>
+<td>方法是安装texLive套装，texlive-full的安装包有点大，约1G多。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="面板式"><a href="#面板式" class="headerlink" title="面板式"></a>面板式</h2><p>ipynb转换为html、md、pdf等格式，还有另一种更简单的方法：在jupyter notebook中，选择<code>File-&gt;Download as</code>，直接选择需要转换的格式就可以了。需要注意的是，转换为pdf格式之前，同样要保证已经安装了xelatex。</p>
 
         
       </div>
@@ -315,21 +371,21 @@
     
       
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/tool/">tool</a></p>
+        <p><span>本文标题:</span><a href="/jupyter/">jupyter</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
-        <p><span>发布时间:</span>2018-12-12, 00:51</p>
-        <p><span>最后更新:</span>2018-12-12, 13:14</p>
+        <p><span>发布时间:</span>2018-12-13, 07:23</p>
+        <p><span>最后更新:</span>2018-12-13, 08:49</p>
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/tool.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/tool.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/tool.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/jupyter.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/jupyter.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/jupyter.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
             </p>
         
         <p>
-            <span>原始链接:</span><a class="post-url" href="/tool/" title="tool">https://cjql.github.io/tool/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/tool/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/jupyter/" title="jupyter">https://cjql.github.io/jupyter/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/jupyter/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -340,16 +396,10 @@
       
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/tag/">
-                    tag
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/achieve/">
-                    achieve
+                <a href="/pythonmysql/">
+                    pythonmysql
                 </a>
             </div>
         
@@ -366,7 +416,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#webs"><span class="toc-number">1.</span> <span class="toc-text">webs</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开发相关"><span class="toc-number">2.</span> <span class="toc-text">开发相关</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方网站"><span class="toc-number">1.1.</span> <span class="toc-text">官方网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改默认路径和浏览器"><span class="toc-number">1.3.</span> <span class="toc-text">修改默认路径和浏览器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在nbviewer中查看"><span class="toc-number">2.</span> <span class="toc-text">在nbviewer中查看</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#格式转换-html、md、pdf、letex"><span class="toc-number">3.</span> <span class="toc-text">格式转换: html、md、pdf、letex</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接"><span class="toc-number">3.1.</span> <span class="toc-text">参考链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后续"><span class="toc-number">3.2.</span> <span class="toc-text">后续</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命令式"><span class="toc-number">3.3.</span> <span class="toc-text">命令式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面板式"><span class="toc-number">3.4.</span> <span class="toc-text">面板式</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -397,15 +447,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/tag/" title="上一篇: tag">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/achieve/" title="下一篇: achieve">
+            <a href="/pythonmysql/" title="下一篇: pythonmysql">
                 <i class="fa fa-angle-right"></i>
             </a>
         
