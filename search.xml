@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>python的特殊方法</title>
+      <link href="/python%E7%9A%84%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/"/>
+      <url>/python%E7%9A%84%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>面向对象编程的类中具有特殊意义的方法<br><a id="more"></a><br>方法名|含义<br>–|–<br><strong>init</strong>()|初始化，进行初始化操作<br><strong>del</strong>()|在对象消失前一刻用的<br><strong>len</strong>()|在对象使用len()函数时调用，一般用于设置对象长度。’’’def <strong>len</strong>(self): return’’’ 一个类的预设的长度<br><strong>str</strong>()|</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 知识整理 </tag>
+            
+            <tag> 读书笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>网络爬虫开发实战</title>
       <link href="/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98/"/>
       <url>/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98/</url>
@@ -1371,9 +1390,9 @@
       
         <tags>
             
-            <tag> github </tag>
-            
             <tag> wiki </tag>
+            
+            <tag> github </tag>
             
         </tags>
       
@@ -1409,9 +1428,9 @@
       
         <tags>
             
-            <tag> achieve </tag>
-            
             <tag> web </tag>
+            
+            <tag> achieve </tag>
             
             <tag> code </tag>
             
